@@ -1,27 +1,23 @@
-# App Component
-This is a ReactJS component that serves as the main component for the application. The component includes the following functionalities:
+# React App with Theme Toggling and Routing
 
-## Dark/Light mode toggle
-Routing using React Router DOM
-## Import statements
-This component imports the following modules and components:
+This React app showcases the implementation of the following features:
 
-./darkMode.css: CSS styles for the dark mode toggle.
-Routes and Route from react-router-dom: used for routing the application.
-useState and useEffect from react: used for handling the theme toggle logic.
-Home, Works, Navbar, About, PlatonStudyCase, SolaneStudyCase, and SedalStudyCase from ./components: These are various components used in the application.
-State and Toggle Logic
-The component uses the useState hook to keep track of the theme, with the default value being set to "light". The toggleTheme function is used to switch between light and dark modes.
+- Theme toggling between light and dark modes
+- Routing between multiple pages using `react-router-dom` library
 
-The useEffect hook is used to set the class name of the document.body element to the current theme.
+## How to use
 
-## Routing
-The component uses the Routes and Route components from react-router-dom to handle the routing of the application. The following routes are defined:
+- Clone or download the repository.
+- Install the required dependencies using `npm install`.
+- Start the development server using `npm start`.
 
-"/": Renders the Home component.
-"/about": Renders the About component.
-"/works": Renders the Works component, and includes the following sub-routes:
-"/works/platon-study-case": Renders the PlatonStudyCase component.
-"/works/sedal-study-case": Renders the SedalStudyCase component.
-"/works/solane-study-case": Renders the SolaneStudyCase component.
-The component finally exports the App component as the default export.
+## File Structure
+
+- `./darkMode.css` - Stylesheet for the dark mode.
+- `./components/Home/Home.js` - Component for the home page.
+- `./components/Works/Works.js` - Component for the works page.
+- `./components/Navbar/Navbar.js` - Component for the navigation bar.
+- `./components/About/About.js` - Component for the about page.
+- `./components/Works/StudyCase/PlatonStudyCase.js` - Component for the Platon study case page.
+- `./components/Works/StudyCase/SolaneStudyCase.js` - Component for the Solane study case page.
+- `./components/Works/StudyCase/SedalStudyCase.js` - Component for the Sedal study case page.
